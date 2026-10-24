@@ -1,0 +1,23 @@
+{
+  "name": "recouvrement-prjt",
+  "private": true,
+  "description": "Portail Al Omrane — backend Spring Boot + frontend Vite",
+  "scripts": {
+    "dev": "npm run dev --prefix frontend",
+    "dev:all": "concurrently -n spring,vite -c cyan,magenta \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:frontend": "npm run dev --prefix frontend",
+    "dev:backend": "./mvnw spring-boot:run",
+    "build": "npm run build --prefix frontend",
+    "install:frontend": "npm install --prefix frontend"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^5.2.2",
+    "react-hook-form": "^7.72.1",
+    "xlsx": "^0.18.5",
+    "zod": "^4.3.6",
+    "zustand": "^5.0.12"
+  }
+}

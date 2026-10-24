@@ -1,0 +1,38 @@
+# Java / Maven
+target/
+*.class
+
+# Node.js / Frontend
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+dist/
+build/
+
+# Secrets et configurations locales
+.env
+.env.*
+!.env.example
+application-local.properties
+application-local.yml
+
+# Logs
+*.log
+
+# IDE et macOS
+.idea/
+.vscode/
+.DS_Store
+
+# Fichiers temporaires
+*.tmp
+
+# Base de données locale
+data/
+*.mv.db
+*.trace.db
+
+# Fichiers d'import potentiellement confidentiels
+sample-import.csv
+sample-import.xlsx
